@@ -8,10 +8,124 @@
   <!-- Link css Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <!-- Link css local -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
-  
+
+  <!--Inicio página 1-->
+  <section id="loginPage">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+          </div>
+          <div class="col-sm">
+            <div id="imageLogo">
+              <img src="assets/image/imagen.png" id="logo" alt="logo">
+              <h1>TRANS-LAB</h1>
+            </div>
+              <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                    <!-- Párrafo vacío para indicar que la contraseña ingresada no es válida-->
+                    <p id="incorrectPassword"></p>
+                  </div>
+                  <button type="submit" id="btn-iniciarSesion" class="btn btn-primary">INICIAR SESIÓN</button>
+                  <div id="pass">
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                  </div>
+                  <label>¿Olvidaste tu contraseña?</label>
+                  </div>
+                  <div id="registro">
+                  <label>¿No tienes cuenta? <strong>REGÍSTRATE</strong></label>
+                  </div>
+                </form>
+          </div>
+          <div class="col-sm">
+          </div>
+        </div>
+      </div>
+
+      <!--Inicio página 2-->
+      <section id="optionsButton">
+          <header>
+            <div class="pos-f-t">
+              <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-dark p-4">
+                  <h5 class="text-white h4">Collapsed content</h5>
+                  <span class="text-muted">Toggleable via the navbar brand.</span>
+                </div>
+              </div>
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand" href="#">TRANS-LAB</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Ver saldo<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#">Calcular tarifa<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#">Perfil<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#">Preguntas frecuentes<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+            </div></header>
+      
+            <section id="buttons">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                  </div>
+                  <div class="col-sm">
+                        <form>
+                          <div class="form-group">
+                          <button type="submit" id="btn-saldo" class="btn btn-primary">VER SALDO</button>
+                          </div>
+                          <div class="form-group">
+                          <button type="submit" id="btn-tarifa" class="btn btn-primary">CALCULAR TARIFA</button>
+                          </div>
+                          <div class="form-group">
+                          <button type="submit" id="btn-perfil" class="btn btn-primary">PERFIL</button>
+                          </div>
+                          <div class="form-group">
+                          <button type="submit" id="btn-preguntas" class="btn btn-primary">PREGUNTAS FRECUENTES</button>
+                          </div>
+                        </form>
+                  </div>
+                  <div class="col-sm">
+                  </div>
+                </div>
+              </div>
+              </section>
+            </section>
+          
+            <!--Inicio página 3-->
+            <section></section>
+
+<!-- Link js Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <!--Link js local-->
+  <script src=""></script>
 </body>
 </html>
