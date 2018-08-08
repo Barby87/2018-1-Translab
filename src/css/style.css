@@ -1,7 +1,7 @@
 /*Estilo página 1 (login)*/
 
 #loginPage { 
-  background-color: rgb(77, 74, 74);
+  background-color: rgb(62, 63, 65);
 }
 
 #imageLogo {
@@ -11,24 +11,25 @@
 }
 
 h1 {
-  color: rgb(240, 171, 45);
+  color: rgb(246, 168, 0);
 }
 
 #logo {
   width: 40%;
 }
 
-#exampleInputEmail1, #exampleInputPassword1, #btn-iniciarSesion {
+#exampleInputEmail1, #exampleInputPassword1, #exampleInputPassword2, #btn-iniciarSesion, #formGroupExampleInput, #formGroupExampleInput2 {
   margin: 0%;
   border: none;
   border-radius: 0; 
 }
 
-
-#btn-iniciarSesion {
+#btn-iniciarSesion, #btn-registrar {
   width: 100%;
-  background-color: #F6A800;
+  background-color: rgb(246, 168, 0);
   color: rgb(77, 74, 74);
+  border-radius: 0;
+  border: none;
 }
 
 label {
@@ -41,13 +42,23 @@ label {
 }
 
 strong {
-  color: #F6A800;
+  color: rgb(246, 168, 0);
 }
 
-/* Estilo página 2*/
+/*Estilo página de registro*/
+#registerPage {
+  background-color: rgb(62, 63, 65);
+}
 
-#optionsButton {
-  background-color: #DDDEE0;
+/* Estilo página 3 (botones)*/
+
+#navBar {
+  background-color: rgb(77, 74, 74);
+  color: white;
+}
+
+#page3 {
+  background-color: rgb(221, 222, 224);
 }
 
 #buttons {
@@ -56,7 +67,7 @@ strong {
 
 #btn-saldo, #btn-tarifa, #btn-perfil, #btn-preguntas {
   width: 100%;
-  background-color: #F6A800;
+  background-color: rgb(246, 168, 0);
   color: white;
   border: none;
   border-radius: 0; 

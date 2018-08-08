@@ -26,9 +26,4 @@ window.validateEmail = function(email){
   return true;
 };
 
-window.validatePassword = function(password){
-    if(password.length < 0 && password.length > 8) {
-      return false;
-}else{
-    return true;
-}
+//const password = document.getElementById("password");
