@@ -18,7 +18,7 @@ h1 {
   width: 40%;
 }
 
-#exampleInputEmail1, #exampleInputPassword1, #exampleInputPassword2, #btn-iniciarSesion, #formGroupExampleInput, #formGroupExampleInput2 {
+#exampleInputEmail1, #password, #confirmPassword, #btn-iniciarSesion, #formGroupExampleInput, #formGroupExampleInput2 {
   margin: 0%;
   border: none;
   border-radius: 0; 
@@ -50,25 +50,85 @@ strong {
   background-color: rgb(62, 63, 65);
 }
 
+/*Estilo menu (navBar)*/
+/*Hacemos que el menu adopte la posición más arriba posible*/
+.menu{
+  position: relative;
+  top:0;
+  height: 100vh; 
+  width: 90vw;  
+  transition: 0.5s ease-out
+}
+
+.menu_closed{
+  left: -90vw;
+}
+
+.menu_open{
+  left: 0;
+}
+
+.close_button{ /* configurando boton de cierre del navbar*/
+  font-size: xx-large;
+  color: black;
+  position: absolute;
+  right: 10px;                   
+}
+
+.menu_content{
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+@media(min-width: 768px){ /* esta medida se encuentra en bootstrap-> overview-> responsive breakpoints */
+  .menu{
+      width: 20vw; /*El menú va a tomar este ancho con pantallas de 768px hacia arriba*/
+  }
+
+  .menu_closed{
+      left:-20vw;
+  }
+}
+
+.fas {
+  color: rgb(246, 168, 0);
+}
+
 /* Estilo página 3 (botones)*/
 
-#navBar {
-  background-color: rgb(77, 74, 74);
-  color: white;
-}
-
-#page3 {
-  background-color: rgb(221, 222, 224);
-}
-
-#buttons {
+#paginaInicio {
+  background-color: #DDDEE0;
   margin-top: 25%;
 }
 
-#btn-saldo, #btn-tarifa, #btn-perfil, #btn-preguntas {
+#btn-saldo, #btn-tarifa, #btn-perfil, #btn-preguntas, #btn-addCard, #btn-viewBalance {
   width: 100%;
   background-color: rgb(246, 168, 0);
   color: white;
   border: none;
   border-radius: 0; 
 }
+
+/*Estilo página 4 (perfil)*/
+#profile {
+  background-color: rgb(246, 168, 0);
+  padding: 20px;
+}
+
+#imgUser {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+#emailUser {
+  margin: 5%;
+}
+
+#cardNumber, #cardNumberBalance, #cardNumberRate {
+  border-bottom: solid rgb(148, 145, 145) 1px; 
+  border-top: none;
+}
+
+
