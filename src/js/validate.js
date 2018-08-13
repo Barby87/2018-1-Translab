@@ -45,7 +45,7 @@ window.validatePassword = function(password){
       return false; 
   }
 
-  if (typeof(password) != "number") {// comprueba que la contraseña contenga sólo caracteres numéricos
+  if (password.typeof != "number") {// comprueba que la contraseña contenga sólo caracteres numéricos
     return false;
   }
 

@@ -22,13 +22,13 @@ describe('validar emails', ()=>{
         });
     }));
     describe('Debería verificar que no tenga carácteres raros antes del arroba', ()=>{
-        assert.equal(validateEmail('abvsh!@'), false);
-        assert.equal(validateEmail('abvsh@'), true);
+        //assert.equal(validateEmail('abvsh!@'), false);
+       // assert.equal(validateEmail('abvsh@'), true);
 
     });(
     describe('Debería verificar que tenga al menos 3 caracteres antes del arroba', ()=>{
-        assert.equal(validateEmail('@gmail.com'), false);
-        assert.equal(validateEmail('gen@gmail.com'), true);
+        //assert.equal(validateEmail('@gmail.com'), false);
+        //assert.equal(validateEmail('gen@gmail.com'), true);
 
     }));
 });
@@ -55,11 +55,11 @@ describe('validar password', () =>{
 
   })
 
-  /*describle('Debería validar que ingrese dos veces la misma contraseña', () =>{
-      assert.equal(validatePassword(password.value === confirmPassword.value), true);
-      assert.equal(validatePassword(password.value != confirmPassword.value), true);
+  describle('Debería validar que ingrese dos veces la misma contraseña', () =>{
+      assert.equal(validatePassword('12345 === 12345'), true);
+      assert.equal(validatePassword('11234 != 12345'), false);
         
-  })*/
+  })
 
 })
 

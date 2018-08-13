@@ -1,3 +1,32 @@
+Displays
+#loginPage {
+  display: block;
+}
+
+#registerPage {
+  display: none;
+}
+
+#navBar {
+  display: none;
+}
+
+#homePage {
+  display: none;
+}
+
+#viewBalance {
+  display: none;
+}
+
+#calculateRate {
+  display: none;
+}
+
+#profilePage {
+  display: none;
+}
+
 /*Estilo página 1 (login)*/
 
 #loginPage { 
@@ -18,7 +47,7 @@ h1 {
   width: 40%;
 }
 
-#exampleInputEmail1, #password, #confirmPassword, #btn-iniciarSesion, #formGroupExampleInput, #formGroupExampleInput2 {
+#loginEmail, #loginPass, #nameInput, #cellPhone, #emailRegister, #passwordRegister, #confirmPassword {
   margin: 0%;
   border: none;
   border-radius: 0; 
@@ -41,7 +70,11 @@ label {
   margin: 5%;
 }
 
-strong {
+#cuenta {
+  color: white;
+}
+
+#linkRegistro {
   color: rgb(246, 168, 0);
 }
 
@@ -102,7 +135,7 @@ strong {
   margin-top: 25%;
 }
 
-#btn-saldo, #btn-tarifa, #btn-perfil, #btn-preguntas, #btn-addCard, #btn-viewBalance {
+#btn-saldo, #btn-tarifa, #btn-perfil, #btn-preguntas, #btn-addCard, #btn-viewBalance, #btn-calculateRate {
   width: 100%;
   background-color: rgb(246, 168, 0);
   color: white;
@@ -110,7 +143,7 @@ strong {
   border-radius: 0; 
 }
 
-/*Estilo página 4 (perfil)*/
+/*Estilo página de perfil*/
 #profile {
   background-color: rgb(246, 168, 0);
   padding: 20px;
@@ -131,4 +164,10 @@ strong {
   border-top: none;
 }
 
+/*Estilo página para ver saldo*/
+
+#cardNumber {
+  border: none; 
+  border-bottom: rgb(160, 156, 156) solid 1px;
+}
 
