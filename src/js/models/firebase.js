@@ -17,15 +17,12 @@ window.onload = () => {
   });
 }
 
-function createAccount() {
+function createUser() {
   const emailRegister = document.getElementById('emailRegister').value;
   const passwordRegister = document.getElementById('passwordRegister').value;
-  const name = document.getElementById('nameInput').value;
-  const cellPhone = document.getElementById('cellPhone').value;
 
-
-  firebase.auth().createUserWithEmailAndPassword(emailRegister, passwordRegister, name, cellPhone)
-    .then(function () {
+  firebase.auth().createUserWithEmailAndPassword(emailRegister, passwordRegister)
+    .then(function() {
 
       registerPage.style.display = "none";
       navBar.style.display = "block"; // Mostrar barra de navegación
@@ -36,10 +33,10 @@ function createAccount() {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
-      console.log(errorCode);
-      console.log(errorMessage);
-
-    });
+      console.log(errorCode)
+      console.log(errorMessage)
+    })
+    return false; // Para que la página no se vuelva a recargar
 }
 
 function verifyEmail() {
