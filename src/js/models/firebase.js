@@ -26,7 +26,7 @@ function createUser() {
 
       registerPage.style.display = "none";
       navBar.style.display = "block"; // Mostrar barra de navegación
-      homePage.style.display = "block"; // Mostrar página de inicio*
+      homePage.style.display = "block"; // Mostrar página de inicio
       verifyEmail()
     })
     .catch(function (error) {
@@ -68,11 +68,12 @@ const errorConfirmPassword = document.getElementById('errorConfirmPassword').val
 const rememberMe1 = document.getElementById('rememberMe1').value;
 const rememberMe2 = document.getElementById('rememberMe2').value;
 
-/*// Validar que la contraseña tenga minimo 4 caracteres y máximo 8.
+// Validar que la contraseña tenga minimo 4 caracteres y máximo 8.
 passwordRegister.addEventListener('keyup', () => {
   if (passwordRegister.value.length < 4) {
     errorPassword.innerHTML = "La contraseña debe tener como mínimo 4 caracteres";
-  } else if (passwordRegister.value.length >= 8) {
+  }
+  if (passwordRegister.value.length >= 8) {
     errorPassword.innerHTML = "La contraseña debe tener como máximo 8 caracteres";
   }
 })
@@ -84,7 +85,7 @@ confirmPassword.addEventListener('keyup', () => {
   } else {
     errorConfirmPassword.innerHTML = "Por favor revisa, ambas contraseñas deben coincidir";
   }
-})*/
+})
 
 //guardar datos del usuario en local storage (checkbox recordarme)
 /*rememberMe.addEventListener('change', saveLocalUser, false);

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>TransLab</title>
   <!-- Link css Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
@@ -135,8 +135,8 @@
             <i class="fas fa-question"></i> Preguntas frecuentes</a>
           <a class="nav-link disabled" href="#">
             <i class="fas fa-arrow-right"></i>Home</a>
-          <a class="nav-link disabled" href="#">
-            <i class="fas fa-sign-out-alt" onclick="logout()"></i> Cerrar sesión</a>
+          <a class="nav-link disabled" onclick="logout()" href="#">
+            <i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
         </div>
       </nav>
     </div>
@@ -280,6 +280,7 @@
 
   <!--Link js local-->
   <script src="src/js/validate.js"></script>
+  <script src="src/js/controllers/session.js"></script>
   <script src="src/js/view/main.js"></script>
   <script src="src/js/models/data.js"></script>
   <script src="src/js/models/firebase.js"></script>
